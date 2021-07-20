@@ -24,7 +24,7 @@ def clash_of_knights(n):
     covered by this area. 
     '''
     for k in range(1, n+1):
-        # knights are not rmonatic enough to squeeze in a single place
+        # knights are not romantic enough to squeeze in a single place
         if k == 1:
             print(0)
         elif k == 2:
