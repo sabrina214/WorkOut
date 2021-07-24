@@ -15,7 +15,7 @@ def deliver_twins(n, s):
     return a, b
 
 n = int(input())
-s = sum(range(1, n+1))
+s = (n * (n+1)) // 2
 maximum_effort = is_twin(s)
 
 if maximum_effort:
