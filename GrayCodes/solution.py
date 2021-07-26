@@ -13,7 +13,6 @@ def add(arr, i):
         return 0
 
 def gray_codes(n):
-    carry = 1
     binary = [0] * n
 
     for i in range(1 << n):
