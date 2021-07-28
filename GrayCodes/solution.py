@@ -1,4 +1,4 @@
-def toggle_or_not(line, bit_pos, state, powers):
+def get_bit(line, bit_pos, state, powers):
     k = powers[bit_pos-1]
 
     if line % (k // 2) == 0:
@@ -20,7 +20,7 @@ def gray_codes(n):
     for line in range(lines):
         gray_code = ''
         for bit_pos in range(n, 0, -1):
-            gray_code += toggle_or_not(line, bit_pos, state, powers)
+            gray_code += get_bit(line, bit_pos, state, powers)
         print(gray_code)
 
 n = int(input())
