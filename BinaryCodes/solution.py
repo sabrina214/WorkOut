@@ -12,7 +12,7 @@ def add(arr, i):
         arr[i] = 1
         return 0
 
-def gray_codes(n):
+def binary_codes(n):
     binary = [0] * n
 
     for i in range(1 << n):
@@ -20,4 +20,4 @@ def gray_codes(n):
         add(binary, n-1)
         
 n = int(input())
-gray_codes(n)
+binary_codes(n)
